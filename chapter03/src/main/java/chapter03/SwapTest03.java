@@ -10,7 +10,7 @@ public class SwapTest03 {
 		
 		swap(a, b);
 
-		System.out.println("a:"+a.value+", b:"+b.value);	// call by value -> 값이 swap되지 않음
+		System.out.println("a:"+a.value+", b:"+b.value);	// call by reference -> 값이 swap됨
 	}
 
 	public static void swap(IntValue p, IntValue q) {
