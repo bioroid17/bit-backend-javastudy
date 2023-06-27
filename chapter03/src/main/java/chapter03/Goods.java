@@ -14,6 +14,15 @@ public class Goods {
 		countOfGoods = countOfGoods + 1;
 	}
 	
+	public Goods(String name, int price, int countStock, int countSold) {
+		this();
+		
+		this.name = name;
+		this.price = price;
+		this.countStock = countStock;
+		this.countSold = countSold;
+	}
+
 	public String getName() {
 		return name;
 	}
