@@ -6,6 +6,14 @@ public class Goods {
 	private int countStock;
 	private int countSold;
 	
+	public static int countOfGoods = 0;
+	
+	public Goods() {
+		// 생성자
+//		Goods.countOfGoods = Goods.countOfGoods + 1;	// 이것도 가능하지만, 클래스 내에서는 클래스 명 생략 가능
+		countOfGoods = countOfGoods + 1;
+	}
+	
 	public String getName() {
 		return name;
 	}

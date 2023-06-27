@@ -4,6 +4,7 @@ public class GoodsApp {
 
 	public static void main(String[] args) {
 		Goods camera = new Goods();	// 기본 생성자
+		System.out.println("상품 갯수:"+Goods.countOfGoods);
 		camera.setName("nikon");
 		camera.setPrice(400000);
 		camera.setCountStock(20);
@@ -13,6 +14,12 @@ public class GoodsApp {
 		System.out.println("가격:"+camera.getPrice());
 		System.out.println("재고:"+camera.getCountStock());
 		System.out.println("판매량:"+camera.getCountSold());
+
+		Goods goods2 = new Goods();	// 기본 생성자
+		System.out.println("상품 갯수:"+Goods.countOfGoods);
+
+		Goods goods3 = new Goods();	// 기본 생성자
+		System.out.println("상품 갯수:"+Goods.countOfGoods);
 	}
 
 }
