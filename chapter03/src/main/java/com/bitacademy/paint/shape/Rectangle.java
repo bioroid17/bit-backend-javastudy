@@ -1,4 +1,4 @@
-package paint;
+package com.bitacademy.paint.shape;
 
 public class Rectangle extends Shape {
 	private int x1, y1;
