@@ -1,6 +1,6 @@
 package paint;
 
-public class Point {
+public class Point implements Drawable {
 	private int x;
 	private int y;
 
@@ -38,10 +38,15 @@ public class Point {
 
 	// 어느 정도 관련 있는 메소드들은 같은 이름으로 파라미터만 다르게 오버로드 해서 만드는 것이 낫다.
 	public void show(boolean visible) {
-		if (visible) {	// visible == true라고 짜지 말자!
+		if (visible) { // visible == true라고 짜지 말자!
 			show();
 		} else {
 			System.out.println("점[x=" + x + ", y=" + y + "]을 지웠습니다.");
 		}
+	}
+
+	@Override
+	public void draw() {
+		show();
 	}
 }
