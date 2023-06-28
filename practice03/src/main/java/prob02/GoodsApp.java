@@ -12,9 +12,12 @@ public class GoodsApp {
 
 		// 상품 입력
 		for(int i = 0; i < COUNT_GOODS; i++) {
-			String goodsIn = scanner.nextLine();
-			String[] tokens = goodsIn.split(" ");
-			goods[i] = new Goods(tokens[0], Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
+			String line = scanner.nextLine();
+			String[] info = line.split(" ");
+			String prodName = info[0];
+			int price = Integer.parseInt(info[1]);
+			int stock = Integer.parseInt(info[2]);
+			goods[i] = new Goods(prodName, price, stock);
 		}
 
 		// 상품 출력
