@@ -9,7 +9,9 @@ public class Song {
 	private int track;
 	
 	public Song() {
-		
+		// some code 1
+		// some code 2
+		// some code 3
 	}
 	
 	public Song(String title, String artist) {
@@ -20,6 +22,8 @@ public class Song {
 	}
 	
 	public Song(String title, String artist, String album, String composer, int year, int track) {
+		this();	// 만약 some code 1~3을 쓸 일이 있다면 이렇게 코드 중복을 최소화하자.
+		
 		this.title = title;
 		this.artist = artist;
 		this.album = album;
