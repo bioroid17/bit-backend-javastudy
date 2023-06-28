@@ -44,6 +44,19 @@ public class Main {
 		
 		GraphicText gt = new GraphicText("Hello World");
 		draw(gt);
+		
+		// instanceof test
+		System.out.println(circle instanceof Circle);		// true
+		System.out.println(circle instanceof Shape);		// true
+		System.out.println(circle instanceof Object);		// true
+		System.out.println(circle instanceof Drawable);		// true
+		
+		// error: 클래스는 hierarchy 상위와 하위만 instanceof를 사용할 수 있다.
+//		System.out.println(circle instanceof Rectangle);	// 에러
+		
+		// 하지만, 인터페이스는 hierarchy와 상관없이 instanceof 연산자를 사용할 수 있
+		System.out.println(circle instanceof Drawable);		// true
+		System.out.println(circle instanceof Runnable);		// false
 	}
 	
 	public static void drawPoint(Point point) {
