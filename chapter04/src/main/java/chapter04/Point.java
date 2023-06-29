@@ -11,7 +11,6 @@ public class Point {
 		this.y = y;
 	}
 
-	// HaspMap, HashTable, HashSet
 	@Override
 	public int hashCode() {
 		return Objects.hash(x, y);
